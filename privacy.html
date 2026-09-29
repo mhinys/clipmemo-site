@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>클립메모 개인정보처리방침</title>
+<link rel="icon" href="logo.png">
+<style>
+  :root { --ink:#171A1F; --muted:#5B636E; --canvas:#E9EBEF; --surface:#FFFFFF; --line:#D3D7DE; --signal:#4B3FD9; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#F2F4F7; --muted:#9AA2AE; --canvas:#14171C; --surface:#1E222A; --line:#2F343D; --signal:#7B71F2; } }
+  body { margin:0; background:var(--canvas); color:var(--ink); font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif; line-height:1.7; }
+  main { max-width:820px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:28px; letter-spacing:-0.6px; } h2 { font-size:19px; margin-top:34px; }
+  table { border-collapse:collapse; width:100%; background:var(--surface); display:block; overflow-x:auto; }
+  th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; font-size:14px; }
+  code { background:var(--surface); border:1px solid var(--line); border-radius:4px; padding:0 4px; font-size:13px; }
+  a { color:var(--signal); } .back { font-size:14px; }
+</style>
+</head>
+<body><main>
+<p class="back"><a href="./">← 클립메모</a></p>
+<h1>클립메모 개인정보처리방침</h1>
+<p>시행일: 2026년 9월 26일</p>
+<p>클립메모(이하 "앱")는 메모를 이용자 본인의 구글 드라이브에 저장하는 메모장입니다. 앱 개발자는 이용자의 메모를 보관하는 서버를 운영하지 않으며, 메모 내용을 수집하거나 전송받지 않습니다.</p>
+<h2>1. 처리하는 정보와 목적</h2>
+<table><tr><th>정보</th><th>어디서·어떻게</th><th>목적</th></tr><tr><td>구글 계정 이메일·이름·프로필 사진</td><td>구글 로그인으로 받아 기기에만 저장</td><td>로그인, 계정 표시</td></tr><tr><td>메모(제목·본문·체크리스트·태그·색·알람), 사진, 첨부 파일, 손글씨</td><td>기기에 저장하고 <b>이용자 본인의 구글 드라이브</b> '클립메모' 폴더에 동기화</td><td>메모 기능, 여러 기기 동기화</td></tr><tr><td>위치 (위치 알람을 켠 경우만)</td><td>기기 안에서만 확인, 외부로 보내지 않음</td><td>정한 장소에 도착·출발 알림</td></tr><tr><td>음성 (받아쓰기를 쓸 때만)</td><td>녹음 파일을 만들지 않음. 기기의 음성 인식 기능이 처리하며, 설정에서 인터넷 인식을 고르면 구글 음성 인식 서비스가 처리</td><td>말을 글로 바꾸기</td></tr><tr><td>사진 속 글자</td><td>기기 안에서 인식(Google ML Kit, 오프라인)</td><td>사진 속 글자 검색</td></tr><tr><td>캘린더 일정 (구글 캘린더 연동을 켠 경우만)</td><td>앱이 만든 '클립메모' 캘린더에만 알람 일정을 쓰고 읽음</td><td>알람을 캘린더에 표시</td></tr></table>
+<p>앱은 광고를 표시하지 않으며, 광고 식별자·사용 통계·위치 기록을 수집하지 않습니다.</p>
+<h2>2. 구글 드라이브·캘린더 권한</h2>
+<ul>
+<li>드라이브는 <b><code>drive.file</code></b> 권한만 씁니다. 앱이 만들거나 이용자가 앱에서 연 파일에만 접근하며, 드라이브의 다른 파일은 볼 수 없습니다.</li>
+<li>캘린더는 <b>앱이 만든 캘린더</b>에만 접근하는 권한을 씁니다(연동을 켤 때만 요청).</li>
+<li>구글 API에서 받은 정보는 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>(제한적 사용 요건 포함)을 따릅니다. 이 정보는 위 기능에만 쓰며 제3자에게 제공하거나 판매하지 않습니다.</li>
+</ul>
+<h2>3. 외부 서비스</h2>
+<p>앱의 기능을 위해 다음 서비스와 통신합니다. 각 서비스의 개인정보 처리는 해당 회사의 방침을 따릅니다.</p>
+<ul>
+<li><b>Google (드라이브, 캘린더, 로그인, 음성 인식, 주소 검색)</b> — 메모 저장·동기화, 로그인, 받아쓰기(인터넷 인식을 고른 경우), 위치 알람의 장소 검색</li>
+<li><b>OpenStreetMap</b> — 위치 알람에서 장소를 고를 때 지도 이미지를 받아 옴(이때 보고 있는 지도 영역이 요청됨)</li>
+<li><b>공유 링크</b> — 이용자가 공유 링크를 만들면 해당 메모의 사본이 이용자 드라이브에 구글 문서로 만들어지고, 링크를 가진 사람이 볼 수 있습니다. 링크는 앱에서 언제든 끌 수 있습니다.</li>
+</ul>
+<h2>4. 보관과 삭제</h2>
+<ul>
+<li>메모는 이용자가 지울 때까지 기기와 이용자의 구글 드라이브에 남습니다.</li>
+<li>앱에서 메모를 지우면 휴지통을 거쳐 기기와 드라이브에서 지워집니다.</li>
+<li>앱을 삭제해도 드라이브의 '클립메모' 폴더는 남습니다. 구글 드라이브에서 폴더를 지우면 모든 메모가 지워집니다.</li>
+<li>잠금 메모는 이용자 비밀번호로 암호화되어 저장되며, 비밀번호를 잊으면 개발자도 복구할 수 없습니다.</li>
+</ul>
+<h2>5. 아동</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+<h2>6. 문의</h2>
+<p>개인정보 관련 문의: <a href="mailto:mhinys@gmail.com">mhinys@gmail.com</a></p>
+<p>이 방침이 바뀌면 앱 스토어 페이지와 이 문서에 알립니다.</p>
+</main></body></html>

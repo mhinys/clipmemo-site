@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>클립메모</title>
+<meta name="description" content="메모를 집어두면 할 일이 됩니다 — 내 구글 드라이브에 저장되는 메모장">
+<link rel="icon" href="logo.png">
+<style>
+  :root { --ink:#171A1F; --muted:#5B636E; --subtle:#8A929D; --canvas:#E9EBEF; --surface:#FFFFFF; --line:#D3D7DE; --signal:#4B3FD9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#F2F4F7; --muted:#9AA2AE; --subtle:#6F7884; --canvas:#14171C; --surface:#1E222A; --line:#2F343D; --signal:#7B71F2; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--canvas); color:var(--ink);
+         font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif; line-height:1.6; }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 16px 64px; }
+  .brand { display:flex; align-items:center; gap:14px; }
+  .brand img { width:64px; height:64px; border-radius:16px; }
+  .brand h1 { font-size:34px; margin:0; letter-spacing:-1px; }
+  .tagline { font-size:26px; font-weight:700; letter-spacing:-0.6px; margin:28px 0 8px; }
+  .lead { color:var(--muted); margin:0 0 28px; }
+  .shots { display:flex; gap:14px; overflow-x:auto; padding-bottom:8px; }
+  .shots img { width:240px; flex:none; border-radius:18px; border:1px solid var(--line); }
+  h2 { font-size:18px; margin:40px 0 12px; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:12px; }
+  .card { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .card b { display:block; margin-bottom:4px; }
+  .card span { color:var(--muted); font-size:14px; }
+  footer { margin-top:48px; color:var(--subtle); font-size:13px; }
+  a { color:var(--signal); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <img src="logo.png" alt="클립메모 로고">
+    <h1>클립메모</h1>
+  </div>
+  <p class="tagline">메모를 집어두면 할 일이 됩니다</p>
+  <p class="lead">떠오른 생각을 빠르게 적고, 체크리스트와 알람으로 할 일까지 챙기는 메모장입니다.
+    메모는 <b>회원님의 구글 드라이브</b> '클립메모' 폴더에 저장되어 폰과 PC에서 같은 메모를 씁니다. 광고도, 유료 기능도 없습니다.</p>
+
+  <div class="shots">
+    <img src="screen1.png" alt="모든 메모 화면">
+    <img src="screen2.png" alt="체크리스트와 알람 화면">
+    <img src="screen3.png" alt="검색 화면">
+  </div>
+
+  <h2>할 수 있는 것</h2>
+  <div class="grid">
+    <div class="card"><b>체크리스트 · 알람</b><span>날짜·시간·반복 알람, 정한 장소에서 알리는 위치 알람</span></div>
+    <div class="card"><b>사진 · 손글씨 · 파일</b><span>본문 사이 사진, 이미지 위에 그리기, 파일 첨부</span></div>
+    <div class="card"><b>빠른 검색</b><span>한두 글자 한글 부분 검색, 사진 속 글자까지</span></div>
+    <div class="card"><b>정리</b><span>12가지 색, 태그, 고정, 보관함, 잠금 메모</span></div>
+    <div class="card"><b>어디서나 같은 메모</b><span>Android 앱과 Windows 앱이 구글 드라이브로 자동 동기화</span></div>
+    <div class="card"><b>바탕화면 스티커</b><span>Windows에서 메모를 바탕화면에 붙여 두기</span></div>
+  </div>
+
+  <h2>개인정보</h2>
+  <p class="lead">클립메모는 구글 드라이브에서 앱이 만든 '클립메모' 폴더만 읽고 씁니다. 다른 드라이브 파일에는 접근하지 않으며, 메모 내용은 개발자에게 전송되지 않습니다.
+    자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 확인하세요.</p>
+
+  <footer>
+    문의: <a href="mailto:mhinys@gmail.com">mhinys@gmail.com</a> · <a href="privacy.html">개인정보처리방침</a>
+  </footer>
+</main>
+</body>
+</html>
