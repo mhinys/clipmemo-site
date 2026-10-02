@@ -1,0 +1,14 @@
+{
+  "name": "클립메모 웹 뷰어",
+  "short_name": "클립메모",
+  "description": "내 구글 드라이브의 클립메모 메모를 읽기 전용으로 봅니다",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E9EBEF",
+  "theme_color": "#4B3FD9",
+  "lang": "ko",
+  "icons": [
+    { "src": "../logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
