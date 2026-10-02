@@ -27,6 +27,13 @@
   .card { background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
   .card b { display:block; margin-bottom:4px; }
   .card span { color:var(--muted); font-size:14px; }
+  .download { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 10px; }
+  .btn { display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:14px;
+         background:var(--signal); color:#fff; text-decoration:none; font-weight:700; min-height:48px; }
+  .btn.alt { background:var(--surface); color:var(--ink); border:1px solid var(--line); }
+  .btn svg { width:20px; height:20px; flex:none; }
+  .btn small { display:block; font-weight:400; font-size:12px; opacity:.8; }
+  .note { color:var(--subtle); font-size:13px; margin:0 0 28px; }
   footer { margin-top:48px; color:var(--subtle); font-size:13px; }
   a { color:var(--signal); }
 </style>
@@ -40,6 +47,20 @@
   <p class="tagline">메모를 집어두면 할 일이 됩니다</p>
   <p class="lead">떠오른 생각을 빠르게 적고, 체크리스트와 알람으로 할 일까지 챙기는 메모장입니다.
     메모는 <b>회원님의 구글 드라이브</b> '클립메모' 폴더에 저장되어 폰과 PC에서 같은 메모를 씁니다. 광고도, 유료 기능도 없습니다.</p>
+
+  <!-- 내려받기 — 늘 최신 릴리스의 파일(이름 고정)을 가리킨다. -->
+  <div class="download" id="download">
+    <a class="btn" href="https://github.com/mhinys/clipmemo-site/releases/latest/download/ClipMemo-android.apk">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+      <span>Android 앱 받기<small>APK · Android 7 이상</small></span>
+    </a>
+    <a class="btn alt" href="https://github.com/mhinys/clipmemo-site/releases/latest/download/ClipMemoSetup.exe">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5l7.5-1v7H3zm8.5-1.2L21 3v8.5h-9.5zM3 12.5h7.5v7l-7.5-1zm8.5 0H21V21l-9.5-1.3z"/></svg>
+      <span>Windows 앱 받기<small>설치 파일 · Windows 10/11</small></span>
+    </a>
+  </div>
+  <p class="note">지금은 베타 테스트판입니다(Play 스토어 등록 전). 설치 방법과 새로 바뀐 점은
+    <a href="https://github.com/mhinys/clipmemo-site/releases/latest">최신 버전 안내</a>에서 볼 수 있어요.</p>
 
   <div class="shots">
     <img src="screen1.png" alt="모든 메모 화면">
